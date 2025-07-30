@@ -18,8 +18,8 @@ View live order books, simulate orders, and analyze market impact across multipl
 Install & Run:
 
 ```bash
-git clone https://github.com/your-org/orderbook-viewer
-cd orderbook-viewer
+git clone https://github.com/JuhiRai007/Real-Time-Orderbook-Viewer-with-Order-Simulation.git
+cd Real-Time-Orderbook-Viewer-with-Order-Simulation
 npm install
 npm run dev # Launch at http://localhost:3000
 
