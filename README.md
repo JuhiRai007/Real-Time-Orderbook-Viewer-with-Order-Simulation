@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+View live order books, simulate orders, and analyze market impact across multiple crypto
+exchanges (OKX, Bybit, Deribit).
+
+Features
+. Live Orderbook Streaming: Real-time updates via public WebSocket APIs with fallback to
+  polling if live data is unavailable.
+. Venue-Agnostic Simulation: Simulate market and limit buy/sell orders and analyze
+  slippage, fill %, and market impact.
+. Venue Support: OKX, Bybit, Deribit (spot/linear/perpetual pairs).
+. Depth Chart Visualization: Interactive depth chart using Recharts library.
+. Responsive Design: Usable on mobile and desktop, styled with Tailwind CSS.
+. Order Impact Analysis: Visual explainers of partial fill, high slippage, and other edge cases.
+. Health/Fallback Mechanism: If API/websockets fail, local mock data is used.
 
 ## Getting Started
 
