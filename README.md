@@ -1,4 +1,4 @@
-# Real-Time Crypto Orderbook Viewer & Simulator
+# Real-Time Orderbook Viewer with Simulation
 
 View live order books, simulate orders, and analyze market impact across multiple cryptocurrency exchanges (OKX, Bybit, Deribit).
 
