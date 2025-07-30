@@ -94,7 +94,7 @@ export class WebSocketService {
 
       ws.onerror = (error) => {
         clearTimeout(connectionTimeout);
-        console.error(`🚨 ${venue} WebSocket error:`, {
+        console.error(` ${venue} WebSocket error:`, {
           readyState: ws.readyState,
           url: ws.url,
           error: error

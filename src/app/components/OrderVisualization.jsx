@@ -72,7 +72,7 @@ export const OrderVisualization = ({ order, orderImpact, orderbook }) => {
       </div>
       {orderImpact.fillPercentage < 100 && (
         <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-          <h4 className="font-medium text-yellow-800 mb-1">⚠️ Partial Fill Warning</h4>
+          <h4 className="font-medium text-yellow-800 mb-1"> Partial Fill Warning</h4>
           <p className="text-sm text-yellow-700">
             This order may not be completely filled due to insufficient liquidity.
             Only {orderImpact.fillPercentage.toFixed(1)}% of the order can be executed.
@@ -81,7 +81,7 @@ export const OrderVisualization = ({ order, orderImpact, orderbook }) => {
       )}
       {orderImpact.slippage > 1 && (
         <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-          <h4 className="font-medium text-red-800 mb-1">🚨 High Slippage Alert</h4>
+          <h4 className="font-medium text-red-800 mb-1"> High Slippage Alert</h4>
           <p className="text-sm text-red-700">
             This order will experience significant slippage ({orderImpact.slippage.toFixed(2)}%).
             Consider reducing order size or using limit orders.

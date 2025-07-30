@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 
-// Only needed for legacy/edge case, but kept for clarity
 const calculateCumulativeTotals = (orders) => {
   let cumulative = 0;
   return orders.map(order => {
@@ -15,7 +14,7 @@ export const OrderbookDisplay = ({
   simulatedOrder,
   exchange = 'unknown',
 }) => {
-  // Works for already-normalized orderbook: { asks: [], bids: [] }
+
   const normalizedOrderbook = useMemo(() => {
     if (
       orderbook &&
@@ -27,7 +26,6 @@ export const OrderbookDisplay = ({
         bids: calculateCumulativeTotals(orderbook.bids),
       };
     }
-    // fallback (legacy/raw API shape) can go here if needed
     return null;
   }, [orderbook]);
 
@@ -75,11 +73,6 @@ export const OrderbookDisplay = ({
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 w-full overflow-x-auto">
-      {/* For quick data reassurance/debug only: */}
-      {/* <pre className="text-xs text-gray-400 bg-gray-100 rounded p-2 mt-2 mb-4 overflow-auto max-h-32">
-        {JSON.stringify(orderbook, null, 2)}
-      </pre> */}
-
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[700px] overflow-y-auto">
         {/* Asks */}
         <div>
